@@ -10,19 +10,16 @@ export default defineType({
     {
       name: 'streetAddress',
       type: 'string',
-      title: 'Gateadresse',
     },
     {
       name: 'postalCode',
       type: 'string',
-      title: 'Postnummer',
       validation: Rule =>
         Rule.regex(/^\d{4}$/).error('Postnummeret må være på formatet 0000'),
     },
     {
       name: 'addressLocality',
       type: 'string',
-      title: 'Poststed',
     },
   ],
 });
